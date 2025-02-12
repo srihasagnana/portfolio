@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.a{
+    width: 500px;
+    height: 500px;
+    background-color: violet;
+}
+
+.b{
+    width:350px;
+    background-color: aqua;
+    height:350px;
+}
+
+.c{
+    width: 280px;
+    height: 240px;
+    background-color: springgreen;
+}

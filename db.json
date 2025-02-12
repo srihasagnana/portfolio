@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "1d2e",
+      "username": "gnana",
+      "password": "gnana",
+      "email": "gnana@gmail.com",
+      "dateofbirth": "2025-01-16"
+    }
+  ]
+}

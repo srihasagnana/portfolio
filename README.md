@@ -1,2 +1,3 @@
-# portfolio
-react,html,css,bootstrap,responsive
+# Portfolio  
+
+React, HTML, CSS, Bootstrap, Responsive

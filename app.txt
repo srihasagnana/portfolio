@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Main from "./components/WAD/Main";
+import Root from "./components/WAD/Root";
+import Roott from "./components/WAD/Trust/Roott";
+import RegistrationT from "./components/WAD/Trust/RegistrationT";
+import LoginT from "./components/WAD/Trust/LoginT";
+import HomeT from "./components/WAD/Trust/HomeT";
+import Registration from "./components/WAD/Village/Registration";
+import Login from "./components/WAD/Village/Login";
+import Home from "./components/WAD/Village/Home";
+import Rootv from "./components/WAD/Village/Rootv";
+function App(){
+  const b= createBrowserRouter([
+    {
+      path:"",
+      element:<Root/>,
+      children:[
+        {
+          path:"",
+          element:<Main/>,
+        },
+        {
+          path:"trust",
+          element:<Roott/>,
+          children:[
+            {
+              path:"register",
+              element:<RegistrationT/>
+            },
+            {
+              path:"login",
+              element:<LoginT/>
+            },
+            {
+              path:"home",
+              element:<HomeT/>
+            }
+          ]
+        },
+        {
+          path:"village",
+          element:<Rootv/>,
+          children:[
+            {
+              path:"register",
+              element:<Registration/>
+            },
+            {
+              path:"login",
+              element:<Login/>
+            },
+            {
+              path:"home",
+              element:<Home/>
+            }
+          ]
+        }
+      ]
+    }
+  ])
+ 
+
+  return(
+    <div>
+    
+        <RouterProvider router={b} />
+
+    </div>
+  
+  )
+}
+
+export default App;
